@@ -1,0 +1,23 @@
+@startqadl
+Circuit GroverSearch {
+    qubit q0
+    qubit q1
+    bit c0
+    bit c1
+
+    gate Hadamard q0
+    gate Hadamard q1
+
+    gate CNOT q0 q1
+    gate X q1
+    gate Hadamard q1
+    gate X q1
+    gate CNOT q0 q1
+
+    gate Hadamard q0
+    gate Hadamard q1
+
+    measure q0 -> c0
+    measure q1 -> c1
+}
+@endqadl

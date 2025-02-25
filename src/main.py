@@ -33,7 +33,7 @@ def save_file(qadl_script, file_name="example.qadl"):
 
 # ---------------------- UI Layout ----------------------
 with gr.Blocks(theme="soft") as qadl_ui:
-    gr.Markdown("# 🚀 QADL: Prototype of Quantum Architecture Description")
+    gr.Markdown("# QADL: Prototype of Quantum Architecture Description")
 
     with gr.Row():
         with gr.Column(scale=3):
@@ -55,8 +55,8 @@ with gr.Blocks(theme="soft") as qadl_ui:
             gr.Markdown("🔍 **Execution Status**")
             execution_status = gr.Textbox(label="Status")
 
-            gr.Markdown("🖼️ **Quantum Circuit**")
-            circuit_image = gr.Image(label="Generated Circuit")
+            gr.Markdown("🖼️ **QADL Architecture Visualization**")
+            circuit_image = gr.Image(label="")
 
     run_button = gr.Button("🚀 Run QADL")
 
@@ -64,6 +64,7 @@ with gr.Blocks(theme="soft") as qadl_ui:
     open_button.click(open_file, outputs=qadl_editor)
     save_button.click(save_file, inputs=[qadl_editor, file_name], outputs=execution_status)
     run_button.click(run_qadl, inputs=qadl_editor, outputs=[execution_status, circuit_image])
+   # run_button.click(run_qadl, inputs=qadl_editor, outputs=[execution_status])
 
 # ---------------------- Start Gradio App ----------------------
 if __name__ == "__main__":

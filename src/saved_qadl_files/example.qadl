@@ -1,23 +1,49 @@
 @startqadl
-Circuit GroverSearch {
+Circuit GroversAlgorithm {
+    // Declare Qubits
     qubit q0
     qubit q1
+    qubit q2
+
+    // Declare Classical Bits
     bit c0
     bit c1
+    bit c2
 
+    // Apply Hadamard to all qubits
     gate Hadamard q0
     gate Hadamard q1
+    gate Hadamard q2
 
+    // Oracle: Mark the solution
+    gate X q0
+    gate X q2
     gate CNOT q0 q1
-    gate X q1
-    gate Hadamard q1
-    gate X q1
-    gate CNOT q0 q1
+    gate CNOT q1 q2
+    gate X q0
+    gate X q2
 
+    // Apply Hadamard again
     gate Hadamard q0
     gate Hadamard q1
+    gate Hadamard q2
 
+    // Apply Diffusion Operator
+    gate X q0
+    gate X q1
+    gate X q2
+    gate CNOT q0 q1
+    gate CNOT q1 q2
+    gate X q0
+    gate X q1
+    gate X q2
+    gate Hadamard q0
+    gate Hadamard q1
+    gate Hadamard q2
+
+    // Measurement
     measure q0 -> c0
     measure q1 -> c1
+    measure q2 -> c2
 }
 @endqadl

@@ -21,35 +21,40 @@ QADL allows users to:
 
 ---
 
-## 📥 Installation
-### **1️⃣ Clone the Repository**
+## 💞 Installation
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/wasimsse/QadlProject.git
 cd QadlProject
+```
 
-2️⃣ Create a Virtual Environment
+### 2️⃣ Set Up Virtual Environment
+```bash
 python -m venv venv_qadl
 source venv_qadl/bin/activate  # Mac/Linux
-venv_qadl\Scripts\activate     # Windows
--------
+venv_qadl\Scripts\activate    # Windows
+```
 
-3️⃣ Install Dependencies
-python -m venv venv_qadl
-source venv_qadl/bin/activate  # Mac/Linux
-venv_qadl\Scripts\activate     # Windows
-
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-▶️ Running QADL Editor
-Launch the QADL GUI using:
+### ▶️ Running QADL Editor
+```bash
 python src/main.py
+```
 
-Open your browser and visit:
-http://127.0.0.1:7860
+Open your browser and visit:  
+**http://127.0.0.1:7860**
 
-📜 QADL Syntax & Examples
-1️⃣ Bell State Circuit
+---
+
+## 📚 QADL Syntax & Examples
+
+### 1️⃣ Bell State Circuit
+```qadl
 @startqadl
 Circuit BellState {
     qubit q0
@@ -62,8 +67,10 @@ Circuit BellState {
     measure q1 -> c1
 }
 @endqadl
+```
 
-2️⃣ Quantum Teleportation
+### 2️⃣ Quantum Teleportation
+```qadl
 @startqadl
 Circuit QuantumTeleportation {
     qubit q0
@@ -79,8 +86,10 @@ Circuit QuantumTeleportation {
     measure q1 -> c1
 }
 @endqadl
+```
 
-3️⃣ Quantum Fourier Transform (QFT)
+### 3️⃣ Quantum Fourier Transform (QFT)
+```qadl
 @startqadl
 Circuit QFT3 {
     qubit q0
@@ -96,8 +105,12 @@ Circuit QFT3 {
     gate SWAP q0 q2
 }
 @endqadl
+```
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+```
 QADL_PROJECT/
 │── src/
 │   ├── qadl_core/        # Core QADL functionality (parsing, execution)
@@ -115,41 +128,58 @@ QADL_PROJECT/
 │   ├── main.py           # Entry point for the project
 │── requirements.txt      # Required dependencies
 │── README.md             # Project documentation
+```
 
-🛠️ How to Use QADL
-Write a QADL Script: Use the built-in editor to write a quantum circuit.
-Run the Script: Click the Run QADL button to execute and visualize.
-Save & Load Files:
-Click Save to store a QADL file.
-Click Open to load a QADL script.
-View the Output: The circuit diagram appears on the right.
-Modify & Debug: Edit and rerun scripts as needed.
+---
 
-🧩 Supported Quantum Gates
+## 🛠️ How to Use QADL
+- **Write a QADL Script**: Use the built-in editor to write a quantum circuit.  
+- **Run the Script**: Click the "Run QADL" button to execute and visualize.  
+- **Save & Load Files**:  
+  - Click **Save** to store a QADL file.  
+  - Click **Open** to load a QADL script.  
+- **View the Output**: The circuit diagram appears on the right.  
+- **Modify & Debug**: Edit and rerun scripts as needed.  
 
-Gate	Description
-Hadamard (H)	Creates superposition
-CNOT	Controlled NOT gate
-X	Pauli-X gate (bit-flip)
-CZ	Controlled-Z gate
-SWAP	Swaps two qubits
-CR	Controlled Rotation
+---
 
-🤝 Contributing
-Want to contribute? Follow these steps: 1️⃣ Fork the repository
-2️⃣ Create a new branch
-3️⃣ Make changes & commit
-4️⃣ Push to GitHub and open a PR
+## 🧩 Supported Quantum Gates
 
+| Gate  | Description                  |
+|-------|------------------------------|
+| **H** | Hadamard (Creates superposition) |
+| **CNOT** | Controlled NOT gate          |
+| **X** | Pauli-X gate (bit-flip)      |
+| **CZ** | Controlled-Z gate            |
+| **SWAP** | Swaps two qubits            |
+| **CR** | Controlled Rotation         |
+
+---
+
+## 🤝 Contributing
+Want to contribute? Follow these steps:
+
+1️⃣ **Fork the repository**  
+2️⃣ **Create a new branch**  
+3️⃣ **Make changes & commit**  
+4️⃣ **Push to GitHub and open a PR**  
+
+```bash
 git checkout -b feature-new
 git commit -m "Added new feature"
 git push origin feature-new
+```
 
-📄 License
-This project is open-source under the MIT License.
+---
 
-🔗 Resources
-📖 Qiskit Documentation: Qiskit.org
-📚 Quantum Computing Basics: IBM Quantum
-🎓 Learn Quantum Programming: Quantum Katas
-💡 Project Repository: QADL GitHub
+## 📄 License
+This project is open-source under the **MIT License**.
+
+---
+
+## 🔗 Resources
+- 📖 [Qiskit Documentation](https://qiskit.org)  
+- 📚 [Quantum Computing Basics - IBM Quantum](https://quantum-computing.ibm.com)  
+- 🎓 [Learn Quantum Programming - Quantum Katas](https://github.com/microsoft/QuantumKatas)  
+- 💡 [Project Repository: QADL GitHub](https://github.com/wasimsse/QadlProject)  
+

@@ -68,8 +68,8 @@ with gr.Blocks(theme="soft") as qadl_ui:
                 save_as_button = gr.Button("💾 Save As")
 
         with gr.Column(scale=2):
-            gr.Markdown("### 🖥️ Quantum Circuit")
-            output_image = gr.Image(label="Generated Circuit", type="pil")
+            gr.Markdown("### 🖥️ QADL Architecture Visualization")
+            output_image = gr.Image(label="", type="pil")
     
     with gr.Row():
         execution_status = gr.Textbox(label="Execution Status", interactive=False, lines=2)

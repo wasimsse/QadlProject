@@ -53,7 +53,20 @@ Open your browser and visit:
 
 ## 📚 QADL Syntax & Examples
 
-### 1️⃣ Bell State Circuit
+### 1️⃣ Basic Super position
+```qadl
+
+@startqadl
+Circuit BasicSuperposition {
+    qubit q0
+bit c0
+    gate Hadamard q0
+    measure q0 -> c0
+}
+@endqadl
+```
+
+### 2️⃣ Bell State Circuit
 ```qadl
 @startqadl
 Circuit BellState {
@@ -63,35 +76,32 @@ Circuit BellState {
     bit c1
     gate Hadamard q0
     gate CNOT q0 q1
-
     measure q0 -> c0
     measure q1 -> c1
 }
 @endqadl
 ```
 
-### 2️⃣ Quantum Teleportation
+### 3️⃣ Quantum Teleportation
 ```qadl
 @startqadl
 Circuit QuantumTeleportation {
     qubit q0
     qubit q1
     qubit q2
-bit c0 
-bit c1 
-
+    bit c0 
+    bit c1 
     gate Hadamard q1
     gate CNOT q1 q2
     gate CNOT q0 q1
     gate Hadamard q0
-
     measure q0 -> c0
     measure q1 -> c1
 }
 @endqadl
 ```
 
-### 3️⃣ Grovers Algorithm
+### 4️⃣ Grovers Algorithm
 ```qadl
 @startqadl
 Circuit GroversAlgorithm {
@@ -113,7 +123,6 @@ Circuit GroversAlgorithm {
     gate CNOT q1 q2
     gate X q0
     gate Hadamard q0
-
     measure q0 -> c0
     measure q1 -> c1
     measure q2 -> c2
@@ -121,28 +130,40 @@ Circuit GroversAlgorithm {
 @endqadl
 ```
 
-### 4️⃣ Quantum Fourier Transform (QFT)
+### 5️⃣ Quantum Fourier Transform (QFT)
 ```qadl
 @startqadl
 Circuit QFT3 {
     qubit q0
     qubit q1
     qubit q2
-
     gate Hadamard q0
     gate CNOT q0 q1
     gate CNOT q0 q2
     gate Hadamard q1
     gate CNOT q1 q2
     gate Hadamard q2
-
     gate CNOT q0 q2
     gate CNOT q2 q0
     gate CNOT q0 q2
 }
 @endqadl
 ```
+### 6️⃣ Phase Shift Simulation
+```qadl
+@startqadl
+Circuit PhaseShiftSimulation {
+    qubit q0
+    qubit q1
+bit c0
+    gate Hadamard q0
+    gate CNOT q0 q1  // Apply CNOT between two distinct qubits
+    gate Hadamard q0
 
+    measure q0 -> c0
+}
+@endqadl
+```
 ---
 
 ## 📁 Project Structure

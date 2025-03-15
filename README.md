@@ -130,12 +130,15 @@ Circuit QFT3 {
     qubit q2
 
     gate Hadamard q0
-    gate CR q1 q0 1/2
-    gate CR q2 q0 1/4
+    gate CNOT q0 q1
+    gate CNOT q0 q2
     gate Hadamard q1
-    gate CR q2 q1 1/2
+    gate CNOT q1 q2
     gate Hadamard q2
-    gate SWAP q0 q2
+
+    gate CNOT q0 q2
+    gate CNOT q2 q0
+    gate CNOT q0 q2
 }
 @endqadl
 ```

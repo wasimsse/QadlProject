@@ -9,7 +9,6 @@ QADL allows users to:
 - **Execute** and generate graphical representations of circuits  
 
 ---
-
 ##  Features
 ✅ **Quantum Circuit Description** using simple and intuitive syntax  
 ✅ **Graphical Visualization** of quantum circuits  

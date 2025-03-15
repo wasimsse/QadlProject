@@ -1,4 +1,4 @@
-# 🧑‍💻 QADL - Quantum Architecture Description Language
+#  QADL - Quantum Architecture Description Language
 
 QADL (**Quantum Architecture Description Language**) is a **domain-specific language (DSL)** designed for defining **quantum circuits and architectures**. This project provides a **QADL editor, execution engine, and visualization tools**.
 
@@ -10,7 +10,7 @@ QADL allows users to:
 
 ---
 
-## 🚀 Features
+##  Features
 ✅ **Quantum Circuit Description** using simple and intuitive syntax  
 ✅ **Graphical Visualization** of quantum circuits  
 ✅ **Support for Multiple Gates** (Hadamard, CNOT, X, CZ, etc.)  
@@ -21,7 +21,7 @@ QADL allows users to:
 
 ---
 
-## 💞 Installation
+##  Installation
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -51,7 +51,7 @@ Open your browser and visit:
 
 ---
 
-## 📚 QADL Syntax & Examples
+## QADL Syntax & Examples
 
 ### 1️⃣ Basic Super position
 ```qadl
@@ -189,7 +189,7 @@ QADL_PROJECT/
 
 ---
 
-## 🛠️ How to Use QADL
+## 🛠 How to Use QADL
 - **Write a QADL Script**: Use the built-in editor to write a quantum circuit.  
 - **Run the Script**: Click the "Run QADL" button to execute and visualize.  
 - **Save & Load Files**:  
@@ -200,7 +200,7 @@ QADL_PROJECT/
 
 ---
 
-## 🧩 Supported Quantum Gates
+##  Supported Quantum Gates
 
 | Gate  | Description                  |
 |-------|------------------------------|
@@ -213,7 +213,7 @@ QADL_PROJECT/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Want to contribute? Follow these steps:
 
 1️⃣ **Fork the repository**  
@@ -229,12 +229,12 @@ git push origin feature-new
 
 ---
 
-## 📄 License
+##  License
 This project is open-source under the **MIT License**.
 
 ---
 
-## 🔗 Resources
+##  Resources
 - 📖 [Qiskit Documentation](https://qiskit.org)  
 - 📚 [Quantum Computing Basics - IBM Quantum](https://quantum-computing.ibm.com)  
 - 🎓 [Learn Quantum Programming - Quantum Katas](https://github.com/microsoft/QuantumKatas)  

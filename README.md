@@ -88,7 +88,7 @@ Circuit QuantumTeleportation {
 @endqadl
 ```
 
-### 2️⃣ Grovers Algorithm
+### 3️⃣ Grovers Algorithm
 ```qadl
 @startqadl
 Circuit GroversAlgorithm {
@@ -118,7 +118,7 @@ Circuit GroversAlgorithm {
 @endqadl
 ```
 
-### 3️⃣ Quantum Fourier Transform (QFT)
+### 4️⃣ Quantum Fourier Transform (QFT)
 ```qadl
 @startqadl
 Circuit QFT3 {

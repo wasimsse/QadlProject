@@ -76,6 +76,8 @@ Circuit QuantumTeleportation {
     qubit q0
     qubit q1
     qubit q2
+bit c0 
+bit c1 
 
     gate Hadamard q1
     gate CNOT q1 q2

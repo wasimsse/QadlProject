@@ -59,7 +59,8 @@ Open your browser and visit:
 Circuit BellState {
     qubit q0
     qubit q1
-
+    bit c0
+    bit c1
     gate Hadamard q0
     gate CNOT q0 q1
 

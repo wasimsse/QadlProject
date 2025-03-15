@@ -166,7 +166,7 @@ bit c0
 ```
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 QADL_PROJECT/
 │── src/
@@ -186,10 +186,9 @@ QADL_PROJECT/
 │── requirements.txt      # Required dependencies
 │── README.md             # Project documentation
 ```
-
 ---
 
-## 🛠 How to Use QADL
+##  How to Use QADL
 - **Write a QADL Script**: Use the built-in editor to write a quantum circuit.  
 - **Run the Script**: Click the "Run QADL" button to execute and visualize.  
 - **Save & Load Files**:  
@@ -235,8 +234,8 @@ This project is open-source under the **MIT License**.
 ---
 
 ##  Resources
-- 📖 [Qiskit Documentation](https://qiskit.org)  
-- 📚 [Quantum Computing Basics - IBM Quantum](https://quantum-computing.ibm.com)  
-- 🎓 [Learn Quantum Programming - Quantum Katas](https://github.com/microsoft/QuantumKatas)  
-- 💡 [Project Repository: QADL GitHub](https://github.com/wasimsse/QadlProject)  
+-  [Qiskit Documentation](https://qiskit.org)  
+-  [Quantum Computing Basics - IBM Quantum](https://quantum-computing.ibm.com)  
+-  [Learn Quantum Programming - Quantum Katas](https://github.com/microsoft/QuantumKatas)  
+-  [Project Repository: QADL GitHub](https://github.com/wasimsse/QadlProject)  
 

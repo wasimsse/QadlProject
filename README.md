@@ -88,6 +88,36 @@ Circuit QuantumTeleportation {
 @endqadl
 ```
 
+### 2️⃣ Grovers Algorithm
+```qadl
+@startqadl
+Circuit GroversAlgorithm {
+    qubit q0
+    qubit q1
+    qubit q2
+    bit c0
+    bit c1
+    bit  c2
+    gate Hadamard q0
+    gate X q0
+    gate CNOT q0 q1
+    gate CNOT q1 q2
+    gate X q0
+    gate X q2
+    gate Hadamard q0
+    gate X q0
+    gate CNOT q0 q1
+    gate CNOT q1 q2
+    gate X q0
+    gate Hadamard q0
+
+    measure q0 -> c0
+    measure q1 -> c1
+    measure q2 -> c2
+}
+@endqadl
+```
+
 ### 3️⃣ Quantum Fourier Transform (QFT)
 ```qadl
 @startqadl
